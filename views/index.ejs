@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Bees </title> 
+  </head>
+  <body>
+    <h1> <%= title %> </h1>
+    <p> <%= message %> </p>
+    <table class="json_data table">
+    	<thead>
+		<tr>
+			<th>Date Time</th>
+			<th>Oustide Temp</th>
+			<th>Inside Temp</th>
+			<th>Humidity</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% for(var i=0; i < hive_data.length; i++) { %>
+			<tr>
+				<td> <%= hive_data[i].dateTime %> </td>
+				<td> <%= hive_data[i].outTemp %> </td>
+				<td> <%= hive_data[i].inTemp %> </td>
+			        <td> <%= hive_data[i].Humidity %> </td>
+			</tr>
+		<% } %>
+	</tbody>
+  </body>
