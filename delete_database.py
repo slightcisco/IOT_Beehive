@@ -1,6 +1,6 @@
 import pymongo
 
-mongoclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoclient = pymongo.MongoClient("mongodb://simon.64-b.it:27017/")
 mongodb = mongoclient["bees"]
 mongocol = mongodb["BeeData"]
 
